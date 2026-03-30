@@ -8,9 +8,9 @@ import { ScrollArea } from '../../components/ui/scroll-area';
 import { MessageCircle, Send } from 'lucide-react';
 import { toast } from 'sonner';
 
-export const AdminSupport: React.FC = () => {
+export const AdminSupport = () => {
   const { supportMessages, replyToMessage } = useApp();
-  const [selectedMessage, setSelectedMessage] = useState<string | null>(null);
+  const [selectedMessage, setSelectedMessage] = useState(null);
   const [replyText, setReplyText] = useState('');
 
   const selectedConversation = supportMessages.find((msg) => msg.id === selectedMessage);

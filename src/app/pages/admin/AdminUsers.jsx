@@ -6,7 +6,7 @@ import { Badge } from '../../components/ui/badge';
 import { Eye, Ban, Shield } from 'lucide-react';
 import { toast } from 'sonner';
 
-export const AdminUsers: React.FC = () => {
+export const AdminUsers = () => {
   // Mock user data
   const users = [
     {

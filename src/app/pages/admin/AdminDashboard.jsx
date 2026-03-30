@@ -4,7 +4,7 @@ import { useApp } from '../../context/AppContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { BookOpen, Users, MessageCircle, TrendingUp } from 'lucide-react';
 
-export const AdminDashboard: React.FC = () => {
+export const AdminDashboard = () => {
   const { allBooks, supportMessages } = useApp();
 
   const openMessages = supportMessages.filter((msg) => msg.status === 'open').length;

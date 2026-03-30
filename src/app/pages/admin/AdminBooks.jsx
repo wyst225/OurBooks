@@ -9,11 +9,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Plus, Edit, Trash2, Star } from 'lucide-react';
 import { toast } from 'sonner';
 
-export const AdminBooks: React.FC = () => {
+export const AdminBooks = () => {
   const { allBooks } = useApp();
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
 
-  const handleAddBook = (e: React.FormEvent) => {
+  const handleAddBook = (e) => {
     e.preventDefault();
     toast.success('Book added successfully!');
     setIsAddDialogOpen(false);
